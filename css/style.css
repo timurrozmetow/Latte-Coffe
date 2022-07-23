@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Inter;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../font/Inter-Regular.otf);
+}
+header{
+    height: 120px;
+    background-color: #4A2B33;
+    color:#D27487;
+
+
+}
+.c12{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 56px;
+    align-items: center;
+
+}
+ul li{
+    display: inline-block;
+    padding:0  10px;
+}
+ul li a{
+    color:#D27487;
+    font-weight: 600;
+} 
+.CenterText{
+    padding: 0 135px 0 0;
+    letter-spacing: 4px;
+}
+.icons img{
+    padding:0 10px;
+}
+.HeaderIcon{
+height: 22.5px;
+}
+.HeaderImg{
+    /* height: 656px; */
+    padding: 0 auto;
+    background-color: #4A2B33;
+    
+}
+.HeaderImg1{
+    width: 93%;
+    padding: 0 59px;
+    /* height: 656px; */
+    /* padding: 0 auto; */
+    /* background-color: #4A2B33; */
+    
+}
+
+.textInCenter{
+    height: 644px;
+    background-color:white;
+    /* calc(left: 50%;) */
+    
+}
+.Incenter{
+    width:45%;
+    height: 224px;
+    text-align: center;
+    font-size: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12.5% 0 0 0;
+}
