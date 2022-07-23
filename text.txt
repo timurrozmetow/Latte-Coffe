@@ -1,0 +1,18 @@
+//header
+height:120px
+in left we have navbar
+in center LATTE CAFE
+in right icons
+margin: 0 56px;
+
+color : #4A2B33;
+font : inter;
+
+color: #AA9E54;
+
+color:#6F6F64;
+
+color:#E9E9E3;
+
+about us
+font:Azeret Mono;
