@@ -4,25 +4,31 @@
     text-decoration: none;
     list-style: none;
     font-family: Inter;
+    /* box-sizing: border-box; */
 }
 @font-face {
     font-family: Inter;
     src: url(../font/Inter-Regular.otf);
+    /* font-display:unset; */
+}
+@font-face {
+    font-family: Azeret;
+    src: url(../font/AzeretMono-Regular.ttf);
+}
+.LeftRight{
+    margin: 0 56px;
 }
 header{
+    width: 100%;
     height: 120px;
     background-color: #4A2B33;
     color:#D27487;
-
-
 }
 .c12{
     height: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: 0 56px;
+    justify-content: space-evenly;
     align-items: center;
-
 }
 ul li{
     display: inline-block;
@@ -33,7 +39,8 @@ ul li a{
     font-weight: 600;
 } 
 .CenterText{
-    padding: 0 135px 0 0;
+    font-size: 50px;
+    padding: 0 130px 0 0;
     letter-spacing: 4px;
 }
 .icons img{
@@ -43,25 +50,21 @@ ul li a{
 height: 22.5px;
 }
 .HeaderImg{
-    /* height: 656px; */
-    padding: 0 auto;
+    padding:0 56px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     background-color: #4A2B33;
     
 }
 .HeaderImg1{
-    width: 93%;
-    padding: 0 59px;
-    /* height: 656px; */
-    /* padding: 0 auto; */
-    /* background-color: #4A2B33; */
-    
+    width: 100%;
+    padding: 0 56px 50px 56px;
 }
 
 .textInCenter{
+    width: 100%;
     height: 644px;
-    background-color:white;
-    /* calc(left: 50%;) */
-    
 }
 .Incenter{
     width:45%;
@@ -73,3 +76,153 @@ height: 22.5px;
     margin-right: auto;
     padding: 12.5% 0 0 0;
 }
+.grayWithMenuList{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 1277px;
+    background-color:#E9E9E3;
+}
+.leftSide{
+    padding: 120px 0;
+}
+.TextTitle{
+    font-family: Azeret;
+    font-size: 18px;
+    font-weight: 700;
+    color:#6F6F64;
+}
+.MainText{
+    padding: 20px 0 0 0;
+    height: 135px;
+    width: 558px;
+    font-size: 32px;
+    color:#6F6F64;
+
+}
+.MenuImg{
+    width: 100%;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+}
+.MenuBtn{
+    width: 531px;
+    height: 58px;
+    align-items:center;
+    margin: 15px 0;
+    color:#6F6F64;
+    border: none;
+    border: 2px solid #6F6F64;
+    font-size: 15px;
+}
+.MenuGray{
+    background-color:#6F6F64;
+    color:white;
+}
+.rightSide{
+    padding: 120px 0;
+
+}
+.greenContent{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 300px;
+    width: 100%;
+    background-color:#AA9E54;
+    color:#fff;
+
+}
+.TitleWhite{
+    padding: 0 0  15px 0;
+    color:#fff;
+    text-align: center;
+    font-size: 22px;
+}
+.LeftText{
+    font-size: 30px;
+    text-align: center;
+}
+.GreenLeft{
+    padding:  10px 0 0 175px ;
+}
+.underLeft{
+    padding: 12.5px 0 0 0;
+}
+.GreenRight{
+    padding: 0  175px 0 0;
+}
+.CenterUnder{
+    padding-top: 100px;
+}
+.doubleUnder{
+    padding: 10px 0 0 0;
+}
+.contain{
+    width: 352px;
+}
+.collagePhotos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 166px 100px 166px;
+}
+.Leftpad{
+    padding-bottom: 37px;
+    padding-right: 30px;
+}
+
+footer{
+    display: flex;
+    background-color:#4A2B33;
+    justify-content: space-around;
+    height: 300px;
+    padding: 70px 70px 0 70px ;
+    color:#D27487;
+    align-items:center
+}
+.leftFooter{
+    font-family: Azeret;
+    font-size: 45px;
+    width: 413px;
+    height: 125px;
+    text-align: center;
+}
+.RightFooter{
+    width: 595px;
+    height: 195px;
+    font-size: 20px;
+}
+.hamburger span{
+    display: block;
+    margin-bottom: 5px;
+    background-color: white;
+    height: 4px;
+    width: 27px;
+    /* border-bottom: 0.5px solid white; */
+    transition: 0.4s;
+    border:none;
+    border-radius: 20px;
+    /* border: 1px solid white; */
+    cursor: pointer;
+
+}
+.hamburger:hover span:nth-child(2)
+{
+    background-color:#D27487;
+    transform: translateX(5px);
+}
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, 11px )rotate(45deg);
+}
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+}
+.hamburger.is-active span:nth-child(3){
+    transform: translate(0px, -7px )rotate(-45deg);
+}
+.hamburger{
+    display: none;
+}
+
